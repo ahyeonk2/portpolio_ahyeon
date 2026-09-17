@@ -77,3 +77,23 @@ body:not([data-page=home])>footer{width:calc(100% - 350px);margin:0 40px 0 310px
 .field input:not([type=checkbox]):not([type=file]),.field textarea,.field select,.guestbook-form input,.guestbook-form textarea{padding:8px 4px}
 .guestbook-form{gap:16px}.guestbook-form input,.guestbook-form textarea{padding-left:4px;padding-right:4px}.guest-delete{margin-top:12px;padding:4px 8px;font-size:11px}
 .guestbook-form{gap:16px}.guestbook-form input,.guestbook-form textarea{padding-inline:4px}.guest-delete{margin-top:12px;padding:4px 8px;font-size:11px}
+
+/* Section titles and the 我 wordmark echo the Myeongjo type on the home screen. */
+body:not([data-page=home]) .wordmark,
+.page-title h1,
+.detail-title h1{
+  font-family:"Songti SC","Nanum Myeongjo","Batang","AppleMyungjo",serif;
+  font-weight:400;
+}
+.page-title h1{
+  font-size:clamp(44px,5.5vw,72px);
+  line-height:1.05;
+  letter-spacing:-.035em;
+}
+.detail-title h1{font-weight:700}
+.contact{padding-top:0}
+.contact .page-title{padding-top:65px}
+@media(max-width:760px){
+  .page-title h1{font-size:clamp(38px,12vw,54px)}
+  .contact .page-title{padding-top:35px}
+}
